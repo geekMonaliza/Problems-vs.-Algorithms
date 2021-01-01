@@ -1,0 +1,3 @@
+Because it's required find the closest floor square root, I iterated to half of the n.
+Time = O(log(n))
+space = O(1)

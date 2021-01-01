@@ -1,0 +1,4 @@
+Because array elements are in the range [0, 9], I applied count sort algorithm to sort the arr:
+Time = O(n)
+Space = O(n)
+

@@ -1,0 +1,5 @@
+I used Trie data structure and wrote required methods to find suffixes.
+
+we there's no restriction of depth and number of children as single node can have.
+Time = O(n)
+Space = O(n)

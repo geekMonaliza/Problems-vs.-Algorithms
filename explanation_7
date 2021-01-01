@@ -1,0 +1,9 @@
+I used Trie data structure and wrote required methods.
+we have three main functionality:
+   1. convert path to array of it elements between "/"
+   2. add route handler for path elements
+   3. look up for route handler of path elements
+
+Trie can have depth containing the number of elements between "/":
+Time = O(n)
+Space = O(n)

@@ -1,0 +1,3 @@
+Could find the min, max of the unsorted array in a single traversal:
+Time = O(n)
+Space = O(1)
