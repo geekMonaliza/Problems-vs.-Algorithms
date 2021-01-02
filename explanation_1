@@ -1,3 +1,4 @@
-Because it's required find the closest floor square root, I iterated to half of the n.
+Because it's required to find the closest floor square root, I iterated to n//2 + 1 and selected the floor square root.
+The upper limit of iteration is n/2.
 Time = O(log(n))
 space = O(1)

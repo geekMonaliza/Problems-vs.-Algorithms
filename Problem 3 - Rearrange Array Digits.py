@@ -10,7 +10,6 @@ def rearrange_digits(input_list):
     if len(input_list) == 0:
         return [None, None]
 
-
     n = len(input_list)
 
     counts = [0 for e in range(10)]
@@ -18,18 +17,20 @@ def rearrange_digits(input_list):
     for e in input_list:
         counts[e] = 1
 
+    index = 0
     for i in range(0, 10):
         if counts[i] == 1:
-            sorted_list.append(i)
+            input_list[index] = i
+            index += 1
 
     first_num = 0
     second_num = 0
 
     for i in range(n - 1, -1, -1):
         if i % 2 == 0:
-            first_num = first_num * 10 + sorted_list[i]
+            first_num = first_num * 10 + input_list[i]
         else:
-            second_num = second_num * 10 + sorted_list[i]
+            second_num = second_num * 10 + input_list[i]
     return [first_num, second_num]
 
 

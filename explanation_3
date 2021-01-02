@@ -1,4 +1,10 @@
-Because array elements are in the range [0, 9], I applied count sort algorithm to sort the arr:
+Because array elements are in the range [0, 9], I applied count sort algorithm to sort the arr and distributed
+the sorted digits to two numbers.
+
+Count sort algorithm generates a sorted array by a single pass of input list, but used additional space to save
+counts array which has number of digits a number can have, in our case it's in range [0, 9], so it will be always
+of size 10.
+
 Time = O(n)
-Space = O(n)
+Space = O(1)
 

@@ -1,5 +1,13 @@
-I used Trie data structure and wrote required methods to find suffixes.
+I used Trie data structure and wrote required methods insert nodes, find suffixes and to suffixes.
 
-we there's no restriction of depth and number of children as single node can have.
+For every level of the Trie hierarchy we execute the for loop only for the items at that level.
+If there are total of n nodes in the Trie, there's only a part of that number
+in each node and all of the items in every node sum up to n.
 Time = O(n)
+
+we allocate a single TrieNode object for char.
+It is actually equal to the maximum depth of Trie hierarchy because we keep the Trienode objects at every level until the next
+level recursive call finishes but release them only after that. In the worst case the Trie hierarchy can be O(n) deep.
+This gives you an O(n) space complexity.
 Space = O(n)
+

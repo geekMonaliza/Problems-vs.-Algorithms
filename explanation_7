@@ -1,4 +1,4 @@
-I used Trie data structure and wrote required methods.
+To implementHTTPRouter using a Trie data structure, I filled the required methods to return handler for each route.
 we have three main functionality:
    1. convert path to array of it elements between "/"
    2. add route handler for path elements

@@ -1,3 +1,8 @@
-Could find the min, max of the unsorted array in a single traversal:
+I set the first element of the unsorted array to be initial min and max, then passed each element of input compared with that initial value
+and selected the smaller for min and the larger for max.
+
+I could find min and max of the unsorted array in a single traversal:
 Time = O(n)
+
+I didn't use additional space to find min, max
 Space = O(1)

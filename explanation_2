@@ -1,3 +1,7 @@
-I did some modification in binary search algorithm
+The list is rotated sorted list, I used binary search and did some modification in binary search algorithm.
+Because left or right of the mid is always sorted, I added check statement (if)s to detect which part of is sorted and
+in which part the number is located and recur accordingly
+
+Time and space efficiency is like binary search:
 Time = O(log(n))
 space = O(1)

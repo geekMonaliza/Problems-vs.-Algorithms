@@ -22,6 +22,6 @@ print("Pass" if (4 == sqrt(16)) else "Fail")
 print("Pass" if (1 == sqrt(1)) else "Fail")
 print("Pass" if (5 == sqrt(27)) else "Fail")
 print("Pass" if (2 == sqrt(5)) else "Fail")
-print("Pass" if (1 == sqrt(2)) else "Fail")
+print("Pass" if (1 == sqrt(2)) else "Fail")  # we see both 2 and 3 have the same result 1, because we're taking floor
 print("Pass" if (1 == sqrt(3)) else "Fail")
-print("Pass" if (None is sqrt(-3)) else "Fail")
+print("Pass" if (None is sqrt(-3)) else "Fail")  # negative numbers doesn't have square root
