@@ -1,11 +1,7 @@
 def rotated_array_search(input_list, number, start_index, end_index ):
-    """
-    Find the index by searching in a rotated sorted array
-    Args:
-       input_list(array), number(int): Input array to search and the target
-    Returns:
-       int: Index or -1
-    """
+    if len(input_list) == 0:
+        return None
+
     mid = (start_index + end_index)//2
     if start_index > end_index:
         return -1
@@ -26,6 +22,8 @@ def rotated_array_search(input_list, number, start_index, end_index ):
 
 
 def linear_search(input_list, number):
+    if len(input_list) == 0:
+        return None
     for index, element in enumerate(input_list):
         if element == number:
             return index
@@ -47,5 +45,8 @@ test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 6])
 test_function([[6, 7, 8, 9, 10, 1, 2, 3, 4], 1])
 test_function([[6, 7, 8, 1, 2, 3, 4], 8])
 test_function([[6, 7, 8, 1, 2, 3, 4], 1])
-test_function([[6, 7, 8, 1, 2, 3, 4], 10])
+test_function([[6, 7, 8, 1, 2, 3, 4], 10])  # input list doesn't contain 10, returns -1
 test_function([[3, 4, 5, 6, 7, 1, 2], 7])
+test_function([[], 7])
+
+

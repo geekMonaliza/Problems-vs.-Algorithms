@@ -5,6 +5,9 @@ def sort_012(input_list):
     Args:
        input_list(list): List to be sorted
     """
+    if len(input_list) == 0:
+        return []
+
     index = 0
     end_index = len(input_list) - 1
     zeros_index = 0
@@ -23,6 +26,7 @@ def sort_012(input_list):
             end_index -= 1
     return input_list
 
+
 def test_function(test_case):
     sorted_array = sort_012(test_case)
     print(sorted_array)
@@ -35,3 +39,8 @@ def test_function(test_case):
 test_function([0, 0, 2, 2, 2, 1, 1, 1, 2, 0, 2])
 test_function([2, 1, 2, 0, 0, 2, 1, 0, 1, 0, 0, 2, 2, 2, 1, 2, 0, 0, 0, 2, 1, 0, 2, 0, 0, 1])
 test_function([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2])
+test_function([0, 1])
+test_function([1, 1, 0, 1, 0])  # contains 0s and 1s
+test_function([2, 1, 2, 2, 1, 1, 2])  # contains only 1s and 2s
+test_function([2, 1, 2, 2, 1, 1, 2, 1, 1, 1, 1, 2, 1, 1, 2])  # contains only 1s and 2s
+test_function([])

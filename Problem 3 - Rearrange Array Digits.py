@@ -7,6 +7,9 @@ def rearrange_digits(input_list):
     Returns:
        (int),(int): Two maximum sums
     """
+    if len(input_list) == 0:
+        return [None, None]
+
 
     n = len(input_list)
 
@@ -33,6 +36,10 @@ def rearrange_digits(input_list):
 def test_function(test_case):
     output = rearrange_digits(test_case[0])
     solution = test_case[1]
+    if len(test_case[0]) == 0:
+        if output == solution:
+            print("pass")
+            return
     if sum(output) == sum(solution):
         print("Pass")
     else:
@@ -41,3 +48,7 @@ def test_function(test_case):
 
 test_function([[1, 2, 3, 4, 5], [542, 31]])
 test_function([[4, 6, 2, 5, 9, 8], [964, 852]])
+test_function([[7, 9, 0, 4, 3, 5, 2, 1, 8], [97420, 8531]])
+test_function([[1, 0], [1, 0]])
+test_function([[5, 4], [5, 4]])
+test_function([[], [None, None]])

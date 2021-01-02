@@ -28,6 +28,14 @@ random.shuffle(l)
 l1 = [i for i in range(50, 500001)]  # a list containing 0 - 9
 random.shuffle(l1)
 
+l2 = []  # empty array returns None
+
+l3 = [5, 200, 30, 56, 99, 108, 500, 3000, 389]
+
+l4 = [5, 5, 5, 5, 5, 5, 5, 5]
+
 print("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
-print("Pass" if ((None, None) == get_min_max([])) else "Fail")
 print("Pass" if ((50, 500000) == get_min_max(l1)) else "Fail")
+print("Pass" if ((None, None) == get_min_max(l2)) else "Fail")
+print("Pass" if ((5, 3000) == get_min_max(l3)) else "Fail")
+print("Pass" if ((5, 5) == get_min_max(l4)) else "Fail")
